@@ -14,7 +14,6 @@ async function loadTrainingData() {
                 .withFaceLandmarks()
                 .withFaceDescriptor();
             descriptors.push(detection.descriptor);
-            console.log(i);
         }
         faceDescriptors.push(
             new faceapi.LabeledFaceDescriptors(label, descriptors)
